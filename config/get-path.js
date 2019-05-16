@@ -16,8 +16,8 @@ const fs = require("fs");
  */
 module.exports = function getPath(path){
 	let arr = [];
-	let existpath = fs.existsSync(path); //是否存在目录
-	if(existpath){
+	let existPath = fs.existsSync(path); //是否存在目录
+	if(existPath){
 		let readdirSync = fs.readdirSync(path);  //获取目录下所有文件
 		readdirSync.map((item)=>{
 			let currentPath = path + "/" + item;
